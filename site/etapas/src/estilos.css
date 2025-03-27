@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1B4558;
+    text-align: center;
+}
+
+
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header img {
+  max-width: 300px;
+  height: auto;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+nav ul li a:hover {
+    color: #2986B1;
+}
+
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#form-avaliacao input, #form-avaliacao textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#form-avaliacao button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#form-avaliacao button:hover {
+    background-color: #002244;
+}
+
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+
+#inicio h1 {
+    color: #1B4558;
+}
+
+
+#quem-somos h2{
+    color: #1B4558;
+}
+
+
+#avaliacoes h2{
+    color: #1B4558;
+}
+
+
+#cadastro-avaliacao h2{
+    color: #1B4558;
+}
+
+
+#inicio .inicio-container {
+    display: flex;              
+    align-items: center;        
+    justify-content: center;    
+    gap: 20px;                  
+}
+
+
+#inicio img {
+    max-width: 100px;
+    border-radius: 8px;        
+    height: auto;                
+}
+
+
+#inicio p {
+    font-size: 18px;            
+    max-width: 500px;
+    text-align: left;
+    color: #1B4558;
+
+
+}
+
+
+#quem-somos p {
+    color: #1B4558;            
+    text-align: left;          
+    max-width: 800px;          
+    margin: 0 auto;            
+    font-size: 18px;            
+}
+
+
+#lista-avaliacoes p {
+    color: #1B4558;            
+    text-align: left;          
+    max-width: 800px;          
+    margin: 0 auto;            
+    font-size: 18px;            
+}
+
+
+
+
+#hamburgueres h1 {
+    color: #1B4558;
+}
+
+
+#hamburgueres p  {
+    color: #1B4558;
+}
+
+
+#acompanhamentos h1{
+    color: #1B4558;
+}
+
+
+#sobremesas h1{
+    color: #1B4558;
+}
+
+#bebidas h1 {
+    color: #1B4558;
+}
+
+#bebidas h2 {
+    color: #1B4558;
+}
+
+#bebidas p {
+  color: #1B4558;
+}
