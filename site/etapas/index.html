@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=src/index.html">
-    <title>AlphaBurguer</title>
-  </head>
+    <title>Alpha Burguer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
+    <header>
+      <img src="imagens/logo.png.png" alt="Logo AlphaBurger">
+    </header>
+
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="hamburgueres.html">Hambúrgueres</a></li>
+        <li><a href="acompanhamentos.html">Acompanhamentos</a></li>
+        <li><a href="sobremesas.html">Sobremesas</a></li>
+        <li><a href="bebidas.html">Bebidas</a></li>
+      </ul>
+    </nav>
+   
+    <section id="inicio">
+      <h1>Hambúrguer do Dia</h1>
+      <div class="inicio-container">
+          <img src="imagens/Alpha Clássico .png" alt="Hambúrguer Alpha Clássico">
+          <p>Alpha Clássico – Pão brioche, carne Angus, queijo cheddar, alface, tomate e molho especial.</p>
+      </div>
+    </section>
+   
+    <section id="quem-somos">
+        <h2>Quem somos nós</h2>
+        <p>Somos alunos de Ciência da Computação. Este projeto foi confeccionado para a disciplina de Tecnologia Web, lecionada pelo professor Jose Junior. Nosso objetivo é a criação de um site de uma hamburgueria chamada AlphaBurguer.</p>
+    </section>
+   
+    <section id="avaliacoes">
+        <h2>Avaliações</h2>
+        <div id="lista-avaliacoes">
+          <p><strong> Lucas M. - ⭐⭐⭐⭐⭐ </strong>"Simplesmente incrível! O Alpha Clássico tem um sabor espetacular, a carne é suculenta e o molho especial faz toda a diferença. As Alpha Fries estavam crocantes e bem temperadas, sem falar no atendimento, que foi rápido e muito atencioso. Já virou minha hamburgueria favorita!"</p>
+          <p><strong> Ana C. - ⭐⭐⭐⭐⭐ </strong> "Experiência sensacional! Pedi o Beta Bacon e foi um dos melhores hambúrgueres que já comi. O bacon estava crocante, o cheddar bem derretido e a maionese defumada deu um toque perfeito. Para fechar, o Delta Shake de chocolate foi a cereja do bolo. Recomendo demais!"</p>
+        </div>
+    </section>
+   
+    <section id="cadastro-avaliacao">
+        <h2>Deixe sua avaliação</h2>
+        <form id="form-avaliacao">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <textarea id="comentario" placeholder="Sua avaliação" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+   
+    <footer>
+        <p>Alpha Burguer - Todos os direitos reservados</p>
+    </footer>
+   
+    <script>
+      document.getElementById('form-avaliacao').addEventListener('submit', function(event) {
+          event.preventDefault();
+         
+          let nome = document.getElementById('nome').value;
+          let comentario = document.getElementById('comentario').value;
+         
+          if (nome && comentario) {
+              let lista = document.getElementById('lista-avaliacoes');
+              let novaAvaliacao = document.createElement('div');
+              novaAvaliacao.innerHTML = `<p><strong>${nome}:</strong> ${comentario} <button onclick="this.parentElement.remove()">Remover</button></p>`;
+              lista.appendChild(novaAvaliacao);
+             
+              document.getElementById('form-avaliacao').reset();
+          }
+      });
+    </script>
 </body>
-</html
+</html>
